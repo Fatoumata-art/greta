@@ -2,7 +2,7 @@
 
 class Database{
 
-	private $dsn="mysql:dbname=greta_lognes;host=localhost;charset=utf8";
+	private $dsn="mysql:dbname=greta_lognes_77;host=localhost;charset=utf8";
 	private $login="root";
 	private $password="";
 	

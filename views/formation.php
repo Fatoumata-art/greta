@@ -7,23 +7,39 @@
                     <h2>Our Best Consulting Services</h2>
                 </div>
 
-                <?php var dump($variables); ?>
                 <div class="row">
+                <?php 
+
+                foreach($variables as $formations){
+
+              
+                
+                
+                ?>
+                
                     <div class="col-lg-3 col-md-6">
                         <div class="service-item">
                             <img src="img/icon-1.png" alt="Icon">
-                            <h3>Business Strategy</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non
-                            </p>
-                            <a href="formation-details">En savoir plus</a>
-                            <a href="formation-formulaire">Postuler</a>
+                            <h3><?php echo $formations->nom_formation; ?></h3>
+                            <p><?php echo $formations->date_entree; ?></p>
+                            <p><?php echo $formations->date_sortie; ?></p>
+                            <p><?php echo $formations->duree; ?>mois</p>
+                            <p><?php echo $formations->niveau_entree; ?></p>
+                            <p><?php echo $formations->niveau_sortie; ?></p>
+                            <p><?php echo $formations->financement; ?></p>
+                            <p><a href="formation-details-<?php echo $formations->id; ?>">En savoir plus</a></p>
+                            <p><a href="formation-formulaire-<?php echo $formations->id; ?>">Postuler</a></p>
                         </div>
                     </div>
-                   
-                </div>
+                    <?php
+                }
+             ?>
+                 </div>
+                 
             </div>
+            
         </div>
+        
         <!-- Service End -->
 
 
@@ -38,8 +54,8 @@
                     </div>
                     <div class="col-md-6">
                         <div class="section-header">
-                            <p>Our Feature</p>
-                            <h2>Why Choose Us?</h2>
+                            <p>Notre particularité</p>
+                            <h2>Pourquoi nous choisir?</h2>
                         </div>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus 
@@ -56,21 +72,21 @@
                                 <i class="fa fa-users"></i>
                                 <div class="counters-text">
                                     <h2 data-toggle="counter-up">200</h2>
-                                    <p>Our Clients</p>
+                                    <p>Nos Candidats</p>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <i class="fa fa-check"></i>
                                 <div class="counters-text">
                                     <h2 data-toggle="counter-up">300</h2>
-                                    <p>Completed Projects</p>
+                                    <p>Nos Ojectifs</p>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <i class="fa fa-running"></i>
                                 <div class="counters-text">
                                     <h2 data-toggle="counter-up">400</h2>
-                                    <p>Running Projects</p>
+                                    <p>chemin qui mène à la réussite</p>
                                 </div>
                             </div>
                         </div>

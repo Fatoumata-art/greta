@@ -2,8 +2,8 @@
   <div class="contact mt-125">
     <div class="container">
         <div class="section-header">
-            <p>Get In Touch</p>
-            <h2>Get In Touch For Any Query</h2>
+            
+            <h2>Contactez-nous</h2>
         </div>
         <div class="row align-items-center">
             <div class="col-md-5">
@@ -12,8 +12,8 @@
                         <i class="fa fa-map-marker-alt"></i>
                     </div>
                     <div class="contact-text">
-                        <h3>Our Head Office</h3>
-                        <p>123 Street, New York, USA</p>
+                        <h3>Site DIDEROT</h3>
+                        <p>59 Avenue Segraie</p>
                     </div>
                 </div>
                 <div class="contact-info">
@@ -21,8 +21,8 @@
                         <i class="fa fa-phone-alt"></i>
                     </div>
                     <div class="contact-text">
-                        <h3>Call for Help</h3>
-                        <p>+012 345 6789</p>
+                        <h3>Appelez-nous</h3>
+                        <p>01 60 05 57 00</p>
                     </div>
                 </div>
                 <div class="contact-info">
@@ -30,8 +30,8 @@
                         <i class="fa fa-envelope"></i>
                     </div>
                     <div class="contact-text">
-                        <h3>Email for Information</h3>
-                        <p>info@example.com</p>
+                        <h3>Email</h3>
+                        <p>gretalognes@gmail.com</p>
                     </div>
                 </div>
             </div>
@@ -56,7 +56,7 @@
                             <p class="help-block text-danger"></p>
                         </div>
                         <div>
-                            <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
+                            <button class="btn" type="submit" id="sendMessageButton">Envoyé</button>
                         </div>
                     </form>
                 </div>

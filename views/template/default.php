@@ -60,7 +60,7 @@
         <!-- Nav Bar Start -->
         <div class="navbar navbar-expand-lg bg-dark navbar-dark">
             <div class="container-fluid">
-                <a href="index.html" class="navbar-brand">greta GMt 77</a>
+                <a href="index.html" class="navbar-brand">greta MTE 77</a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -69,8 +69,9 @@
                     <div class="navbar-nav ml-auto">
                         <a href="accueil" class="nav-item nav-link active">Accueil</a>
                         <a href="apropos" class="nav-item nav-link">A propos</a>
-                        <a href="formation" class="nav-item nav-link">Formations</a>
+                        <a href="formation" class="nav-item nav-link">Formation</a>
                         <a href="contact" class="nav-item nav-link">Contactez-nous</a>
+                        <a href="admin" class="nav-item nav-link">Admin</a>
                     </div>
                 </div>
             </div>
@@ -90,8 +91,8 @@
                             <div class="col-md-6">
                                 <div class="footer-contact">
                                     <h2>Our Head Office</h2>
-                                    <p><i class="fa fa-map-marker-alt"></i>123 Street, New York, USA</p>
-                                    <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
+                                    <p><i class="fa fa-map-marker-alt"></i>59 avenue Segrair</p>
+                                    <p><i class="fa fa-phone-alt"></i>01 60 05 75 00</p>
                                     <p><i class="fa fa-envelope"></i>info@example.com</p>
                                     <div class="footer-social">
                                         <a href=""><i class="fab fa-twitter"></i></a>

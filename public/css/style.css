@@ -1252,7 +1252,7 @@ a:focus {
 }
 
 .contact .contact-text {
-    position: relative;
+    position: center;
     display: flex;
     flex-direction: column;
     padding-left: 15px;
@@ -1266,12 +1266,14 @@ a:focus {
 }
 
 .contact .contact-text p {
-    margin: 0;
+    margin: 60;
     font-size: 16px;
 }
 
 .contact .contact-form {
-    position: relative;
+    
+    align-content: center;
+    position: center;
     padding: 30px;
     border: 1px solid rgba(0, 0, 0, .1);
     margin-bottom: 30px;

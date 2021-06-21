@@ -12,7 +12,6 @@ class FormationController extends Controller
   }
 
   public function handle($action_url= null, $param1_url = null) {
-    
     if($action_url== 'details'){
       $this->detailsFormation($param1_url);
     }
@@ -23,12 +22,14 @@ class FormationController extends Controller
     else{
       $this->index();
     }
-
   }
   public function detailsFormation($id)
   {
 
     $obj = $this->form->getdetailsById($id);
+    /*echo "Je suis passe ici";
+    var_dump($obj);
+    exit;*/
 
     $this->render('details', array('formation' => $obj));
   } 

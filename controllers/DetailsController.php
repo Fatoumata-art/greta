@@ -1,16 +1,17 @@
 <?php
-class Single_prodController extends Controller
+class DetailsController extends Controller
 {
-  
-    public function index(){
-
-       
-        $this->render('details');
-  
+    private $model;
+    
+    public function __construct()
+    {
+      $this->model = new FormationModel();
     }
 
-   
-
+    public function index(){       
+        $this->render('details', );
+  
+    }
 }
 
 
