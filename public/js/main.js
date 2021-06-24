@@ -136,6 +136,67 @@
             }
         }
     });
-    
+
+
+
+    $( "#formation" ).change(function() {
+        currentFormation = this.value;
+
+        getFormations();
+    });
+
+    $( "#date" ).change(function() {
+        currentDate = this.value;
+
+        getFormations();
+    });
+
+    $( "#duree" ).change(function() {
+        currentDuree = this.value;
+
+        getFormations();
+    });
+
+    $( "#date-limit" ).change(function() {
+        currentDateLimit= this.value;
+
+        getFormations();
+    });
+
+
+ $( "#financement" ).change(function() {
+        currentFinancement = this.value;
+
+        getFormations();
+    });
+
+    $( "#region" ).change(function() {
+        currentRegion = this.value;
+
+        getFormations();
+    });
+
+
+
+
 })(jQuery);
+
+var currentFormation = '';
+
+var currentDate = '';
+
+var currentDateLimit = '';
+
+var currentDuree = '';
+
+var currentFinancement = '';
+
+var currentRegion = '';
+
+// méthode Ajax qui permet de communiquer avec la base de données
+// pour récupérer les formations en filtrant par currentFormation (formation selectionné par l'utilsateur),
+// currentDate (date sélectionnée par l'utilisateur), etc
+function getFormations() {
+    alert( "Hello " + currentFormation)
+}
 

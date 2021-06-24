@@ -2,7 +2,7 @@
 /********* General CSS *********/
 /*******************************/
 body {
-    color: #797979;
+    color: black;
     background: #ffffff;
     font-family: 'Lato', sans-serif;
 }
@@ -13,7 +13,7 @@ h3,
 h4,
 h5, 
 h6 {
-    color: #092a49;
+    color: #;
     font-family: 'Oswald', sans-serif;
 }
 

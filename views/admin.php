@@ -12,9 +12,10 @@
                 <div class="contact-form">
                 <h2>Administration</h2>
                     <div id="success"></div>
-                    <form methode="post" action=" FormationModel.php" id="contactForm" novalidate="novalidate">
+                    <form methode="" action="" id="adminForm" novalidate="">
                         <div class="control-group">
-                            <input type="text" class="form-control" name="login" placeholder="Utilisateur" required="required" data-validation-required-message="Admin" />
+                            <span id='login_m'></span><br>
+                            <input type="text" class="form-control" name="login" id="login" placeholder="Utilisateur" required="required" data-validation-required-message="Admin" />
                             <p class="help-block text-danger"></p>
                         </div>
                         <div class="control-group">
@@ -24,14 +25,35 @@
                         <script type="text/javascript">
 
                         function myOver(){
-                            alert('Cettecghlkmm!;v!nk');
-                            document.write('Vers');
+                            //alert('Hello Admin');
+                           // document.write('Vers');
 
                         }
                         </script>    
          
                         <div>
-                            <a onmouseover="myOver();" ><button class="btn" type="submit" id="sendMessageButton">Connexion</button></a>
+
+                        <button class="btn" type="submit" id="submit">Connexion</button>
+                           <!-- <a onmouseover="myOver();" ><button class="btn" type="submit" id="submit">Connexion</button></a> -->
+
+                        <script>
+
+                        var validation = document.getElementById('submit');
+                        validalidation.addEventListener('click', f_valid);
+                        var login = document.getElementById('login');
+                        var ligin_m = document.getElementById('login_manquant');
+                        var password = document.getElementById('password');
+
+                        function f_valid(e){
+                            if(login.validity.valueMissing){
+                                e.preventDefault();
+                            login.textContext = 'Veillez entrer le bon identifiant';
+                            password.texContent = 'Mot de Passe incorrect';
+                            }
+                           
+                        }
+
+                        </script>
                         </div>
                     </form>
                 </div>
