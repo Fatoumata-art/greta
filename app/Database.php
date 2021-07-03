@@ -29,6 +29,11 @@ class Database{
 
 	}
 
+
+	public function prepare($query) {
+		return $this->pdo->query($query);
+	}
+
   
 
 	public function query($query,$params=false){

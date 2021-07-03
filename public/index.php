@@ -53,5 +53,4 @@ switch($ctrl_url){
 
 	}
 		
-	
-	
+	?>

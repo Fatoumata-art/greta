@@ -15,14 +15,15 @@ class FormationController extends Controller
     if($action_url== 'details'){
       $this->detailsFormation($param1_url);
     }
-    elseif($action_url == 'formulaire')
+    elseif($action_url == 'postuler')
     {
-      $this->formulaire($param1_url);
-    }
-    else{
+      $this->postuler($param1_url);
+    } else{
       $this->index();
     }
   }
+
+
   public function detailsFormation($id)
   {
 
@@ -35,11 +36,26 @@ class FormationController extends Controller
   } 
 
 
-  protected function formulaire($param1_url = null) {
+  protected function postuler($param1_url = null) {
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+      echo "Candidat Postule......".$param1_url;
 
-    $this->render('formulaire');
+      $
+      // on verifier que les champs requis ont été renseignès 
+      // on recupere les infos et on stocke dans les tables candidat et parcourt
+      // puis on redirige vers une autre vue
+
+      $this->render('index');
+      exit;
+    } else {
+      $this->render('postuler');
+    }
   }
 
+function insertForm($nom, $prenom, $email, $date,  $tel = null){
+  //$this->form->getInsertForm();
+
+}
 
 
 

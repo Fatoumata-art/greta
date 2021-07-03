@@ -19,22 +19,9 @@ class FormationModel extends Database
     public function getDetailsById($id) {
         //var_dump($id);
         
-        $res = $this->db->query('SELECT * FROM formation WHERE id='.$id);
+        $res = $this->db->query('SELECT * FROM formation WHERE id='.$id);  
 
         //var_dump($res->fetchObject());
         return $res->fetchObject();
     }
-
-    
-    // Vérifier si le formulaire est soumis 
-   //if ( isset( $_POST['submit'] ) ) {
-    /* récupérer les données du formulaire en utilisant 
-       la valeur des attributs name comme clé 
-      */
-    
-    
-   
-   // echo 'Nom : ' . $nom . ' Age : ' . $age . ' Adresse : ' . $adresse; 
-    //exit;
-// }
 }

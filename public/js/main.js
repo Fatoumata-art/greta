@@ -189,7 +189,7 @@ var currentDateLimit = '';
 
 var currentDuree = '';
 
-var currentFinancement = '';
+var currentfinancement = '';
 
 var currentRegion = '';
 

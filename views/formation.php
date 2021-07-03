@@ -5,8 +5,9 @@
                     <p>Nos formations</p>
                     <h2>Trouver votre formation</h2>
                 </div>
-<div class="service">
-    <form id="formationform" action="" class="smp-form find-formation-form">
+    <div class="service">
+<fieldset>
+    <form >
 
         <div class="row">
             <div class="col-md-4">
@@ -128,8 +129,11 @@
             </div>
         </div>
     </form>
+</fieldset>
      
     </div>
+
+
     
     
 
@@ -158,7 +162,7 @@
                             <p><?php echo $formations->niveau_sortie; ?></p>
                             <p><?php echo $formations->financement; ?></p>
                             <p><a href="formation-details-<?php echo $formations->id; ?>">En savoir plus</a></p>
-                            <p><a href="formation-formulaire-<?php echo $formations->id; ?>">Postuler</a></p>
+                            <p><a href="formation-postuler-<?php echo $formations->id; ?>">Postuler</a></p>
                         </div>
                     </div>
                     <?php
